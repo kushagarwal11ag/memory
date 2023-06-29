@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+html {
+	font-size: 4px;
+}
+body {
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	box-sizing: border-box;
+	background-color: #fefcfb;
+	color: #03045e;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+}
+
+main {
+	min-height: 100vh;
+	padding: 2rem 1rem;
+	background: #caf0f8;
+}
+
+#welcome-screen {
+	display: block;
+}
+
+#game-num-1,
+#game-num-2,
+#game-num-3,
+#game-word-1,
+#game-word-2,
+#game-word-3,
+#game-movie-1 {
+	display: none;
+}
+
+#game-type {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+#game-type header {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.play-difficulty {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.play-lvl {
+	all: unset;
+	cursor: pointer;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background-color: #ade8f4;
+	border-radius: 10px;
+}
+
+.game-level {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.game-difficulty {
+	font-style: italic;
+}
+
+.game-win {
+	display: none;
+	font-size: 4rem;
+	font-family: "Great Vibes", cursive;
+}
+
+.moves {
+	padding: 2rem 0 1rem;
+	text-align: center;
+	font-weight: 400;
+	color: #023e8a;
+	font-size: 1.5rem;
+}
+
+#game-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	justify-items: center;
+	gap: 0.5rem;
+}
+
+.card-cover {
+	all: unset;
+	width: 10rem;
+	height: 20rem;
+	background: linear-gradient(0deg, #023e8a 0%, #ade8f4 100%);
+	cursor: pointer;
+}
+
+.flipper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+}
+
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+	font-size: 2rem;
+}
+
+.card-cover.flipped .flipper {
+	transform: rotateY(180deg);
+}
+
+img {
+	width: inherit;
+	height: inherit;
+}
+
+.movie-logo {
+	transform: scale(0.5);
+}
+
+.next-lvl {
+	margin: 2rem auto 0;
+	font-weight: 400;
+}
+
+@media (min-width: 150px) {
+	html {
+		font-size: 10px;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	#game-container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 1rem;
+	}
+}
+
+@media (min-width: 350px) {
+	html {
+		font-size: 16px;
+	}
+
+	#game-type header {
+		font-size: 4rem;
+	}
+
+	.moves {
+		text-align: left;
+	}
+}

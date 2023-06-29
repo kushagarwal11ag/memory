@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Memory</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/images/logo.svg"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<main>
+			<section id="welcome-screen">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="play-difficulty">
+						<button class="game-level play-lvl number-game">
+							<i class="fa fa-play"></i>
+							<div>Number Game</div>
+						</button>
+						<button class="game-level play-lvl word-game">
+							<i class="fa fa-play"></i>
+							<div>Word Game</div>
+						</button>
+						<button class="game-level play-lvl movie-game">
+							<i class="fa fa-play"></i>
+							<div>Superhero Game</div>
+						</button>
+					</div>
+				</section>
+			</section>
+
+			<section id="game-num-1">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Number Game</div>
+					<div>Difficulty - Basic (12 cards)</div>
+					<div class="game-difficulty">Rule: Match numbers</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">3</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">2</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">6</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">1</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">4</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">1</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">6</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">2</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">5</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">3</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">4</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">5</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Next Level</button>
+			</section>
+
+			<section id="game-num-2">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Number Game</div>
+					<div>Difficulty - Intermediate (16 cards)</div>
+					<div class="game-difficulty">Rule: Match numbers with words</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="26">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Twenty Six</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="82">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Eighty Two</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="79">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Seventy Nine</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="13">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">13</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="13">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Thirteen</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="37">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">37</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="64">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">64</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="91">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Ninety One</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="82">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">82</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="79">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">79</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="58">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Fifty Eight</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="26">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">26</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="91">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">91</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="37">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Thirty Seven</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="58">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">58</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="64">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Sixty Four</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Next Level</button>
+			</section>
+
+			<section id="game-num-3">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Number Game</div>
+					<div>Difficulty - Advanced (20 cards)</div>
+					<div class="game-difficulty">
+						Rule: Match roman numerals with either number or words
+					</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">4</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="8">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">VIII</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">One</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">6</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="10">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">10</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">3</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">VI</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Two</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">IV</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">V</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="10">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">X</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">1</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">5</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="7">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">VII</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">III</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="9">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">IX</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="9">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">9</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="7">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">7</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="8">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">8</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">2</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Menu</button>
+			</section>
+
+			<section id="game-word-1">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Word Game</div>
+					<div>Difficulty - Basic (12 cards)</div>
+					<div class="game-difficulty">
+						Rule: Match homophones
+						<div class="game-difficulty">(similar sounding words)</div>
+					</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Delli</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Curry</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Bengal</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Taj</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Ganges</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Raj</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Bangle</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Kari</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Sorry</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Delhi</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Gangs</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Sari</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Next Level</button>
+			</section>
+
+			<section id="game-word-2">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Word Game</div>
+					<div>Difficulty - Intermediate (12 cards)</div>
+					<div class="game-difficulty">
+						Rule: Word Association
+						<div class="game-difficulty">
+							(words associated with each other)
+						</div>
+					</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="7">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Diyas</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Mehndi</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Cricket</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Taj Mahal</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Yoga</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Marble</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="8">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Silk</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Henna</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Colours</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Curry</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="4">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Peace</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="5">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Holi</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="6">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">MS Dhoni</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="8">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Saree</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="7">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Diwali</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="3">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">Spices</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Menu</button>
+			</section>
+
+			<section id="game-movie-1">
+				<section id="game-type">
+					<header>Memory Game</header>
+					<div class="game-level">Superhero Game</div>
+					<div>Difficulty - Basic (12 cards)</div>
+					<div class="game-difficulty">Rule: Match superhero franchise</div>
+					<div class="game-win">Round Cleared!</div>
+				</section>
+
+				<div class="moves">Moves: 0</div>
+
+				<section id="game-container">
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img class="movie-logo" src="assets/images/dc/batman.svg" />
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img class="movie-logo" src="assets/images/dc/flash.svg" />
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/marvel/black-panther.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/marvel/captain-america.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/dc/green-arrow.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img class="movie-logo" src="assets/images/marvel/hulk.svg" />
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/dc/green-lantern.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img class="movie-logo" src="assets/images/dc/superman.svg" />
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/marvel/iron-man.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/marvel/spider-man.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="1">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img
+									class="movie-logo"
+									src="assets/images/dc/wonder-woman.svg"
+								/>
+							</div>
+						</div>
+					</button>
+					<button class="card-cover" data-front="false" data-cardValue="2">
+						<div class="flipper">
+							<div class="front">
+								<img src="assets/images/card-logo.svg" />
+							</div>
+							<div class="back">
+								<img class="movie-logo" src="assets/images/marvel/thor.svg" />
+							</div>
+						</div>
+					</button>
+				</section>
+
+				<button class="game-level play-lvl next-lvl">Menu</button>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
