@@ -73,6 +73,7 @@ main {
 
 .game-difficulty {
 	font-style: italic;
+	text-align: center;
 }
 
 .game-win {
