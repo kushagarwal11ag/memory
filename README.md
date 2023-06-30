@@ -81,23 +81,23 @@ In CSS, learned to animate card flip and when flipped, hides current information
 In JavaScript, learned to implement more complex DOM manipulation. 
 ```js
 function flipCard(event) {
-	movesElement.item(currentDifficultyLevel - 1).innerHTML = `Moves: ${movesPlayed}`;		//update moves when card flipped
+	movesElement.item(currentDifficultyLevel - 1).innerHTML = `Moves: ${movesPlayed}`;	//update moves when card flipped
 
 	if (!buttonFront && cardsRevealed < 2) {
 		button.setAttribute("data-front", "true");
-		button.classList.add("flipped");													//flip card
+		button.classList.add("flipped"); 	//flip card
 		flippedElements.push(button);
 
 		if (cardsRevealed === 2) {
 			cards.forEach((button) => {
 				button.removeEventListener("click", flipCard);
 			});
-			if (firstCardValue === secondCardValue) {										//if card values match
+			if (firstCardValue === secondCardValue) {	//if card values match
 				setTimeout(() => {
 					flippedElements[0].disabled = true;
 					flippedElements[1].disabled = true;
 					flippedElements = [];
-				}, 1000);																	//hide cards and clear flippedElements array
+				}, 1000);	//hide cards and clear flippedElements array
 			}
 			//additional code
 		}
